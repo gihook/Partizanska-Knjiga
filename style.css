@@ -116,9 +116,6 @@ body{
 	background: linear-gradient(#DFDFDF, white);
 }
 
-.navigation-item  hover:not(.active) {
-    background-color: #CB1E1A;
-}
 
 .active {
     position: relative;
@@ -140,6 +137,21 @@ body{
     position: absolute;
     top: -50px;
     left: -50px;
+}
+
+.active:after {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-top: 65px solid #CB1E1A;
+    border-bottom: 50px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -50px;
 }
 
 .navigation-item a{

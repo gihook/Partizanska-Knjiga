@@ -1,15 +1,11 @@
-/*$(document).ready(function() {
-    $('.navigation>ul>li').hover(function(e) 
-    { 
-	setDefaultClasses();
-	$(this).parent().removeClass();
-     	$(this).parent().addClass("active");
-    });
+$(document).ready(function() {
+    $(".navigation-item").hover(onNavigationItemMouseEnter, onNavigationItemMouseLeave);
 });
 
-function setDefaultClasses(){
-	$('.navigation>ul>li').each(function(){
-		$(this).removeClass();
-		$(this).addClass("navigation-list");
-	});
-}*/
+function onNavigationItemMouseEnter(){
+	$(this).removeClass("navigation-item").addClass("active");
+}
+
+function onNavigationItemMouseLeave(){
+	$(this).removeClass("active").addClass("navigation-item");
+}
