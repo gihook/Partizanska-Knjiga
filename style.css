@@ -158,5 +158,32 @@ body{
     text-decoration: none;
 }
 
+.social-list {
+	list-style-type: none;
+}
+
+.social-list li.face a {
+	background: url("images/face-icon-ttcredesign.png") no-repeat 0 0
+}
+.social-list li.twitter a {
+	background: url("images/twitter-icon-ttcredesign.png") no-repeat 0 0
+}
+
+.social-list li {
+    margin-bottom: 0;
+    margin-right: 17px;
+    padding-left: 0;
+    float: left
+}
+.social-list li:last-child {
+    margin-right: 0
+}
+.social-list li a {
+    display: block;
+    text-indent: -9999em;
+    width: 24px;
+    height: 24px
+}
+
 
 
